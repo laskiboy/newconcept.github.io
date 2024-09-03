@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="../img/nc-logo.png">
+    <link rel="stylesheet" href="../asset/css/bootstrap.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>New Concept - English Course</title>
+</head>
+
+<body>
+    <header>
+        <p class="name-logo">New Concept</p>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="closeSidebar()" class="x"><a href="#" class="x"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg></a></li>
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#" class="link">About</a></li>
+                <li><a href="#" class="link">Contact</a></li>
+                <li><button onclick="closeSidebar()" type="button" class="tombol" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Login</button></li>
+            </ul>
+            <a onclick="openSidebar()" class="ham" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="#BFD8AF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg></a></li>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="first-con">
+            <div class="img"></div>
+            <span class="h1-first">Bahasa Inggris Itu</span>
+            <div class="typing">
+                <div class="h1-sec">PENTING</div>
+                <div class="h1-sec">KUNCI</div>
+                <div class="h1-sec">UNIVERSAL</div>
+                <div class="h1-sec">GLOBAL</div>
+            </div>
+        </div>
+        <div class="second-con">
+            <div class="kartu">
+                <img class="img-nc" src="../img/nc-1.jpg">
+                <h1 class="h-nc">Bahasa Inggris Itu Penting</h1>
+                <p class="p-nc">Bahasa internasional yang paling banyak dipergunakan dalam dunia akademik, bisnis,
+                    teknologi maupun hiburan, dan dapat meningkatkan value profesionalime Anda.
+                </p>
+            </div>
+            <div class="kartu">
+                <img src="../img/nc-2.jpg" class="img-nc">
+                <h1 class="h-nc">Mengapa NC?</h1>
+                <p class="p-nc">Pengajar yang kompeten dan telah mendapatkan training di bawah bimbingan langsung
+                    seorang Doktor Bahasa Lulusan OHIO STATE UNIVERSITY, USA.
+                </p>
+            </div>
+            <div class="kartu">
+                <img src="../img/nc-3.jpeg" class="img-nc">
+                <h1 class="h-nc">Menunjang secara Total</h1>
+                <p class="p-nc">Kegiatan penunjang di luar kelas menentukan ketrampilan siswa dalam berbahasa Inggris,
+                    New Concept selalu menyiapkan program-program kegiatan penunjang yang beragam.</p>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <h1 class="fw-bold mt-3">Login</h1>
+                    <form>
+                        <label class="mt-3" for="email">Email</label>
+                        <div class="mb-3 email">
+                            <input type="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="mt-2" for="password">Password</label>
+                            <div class="mb-3 email">
+                                <input type="password" placeholder="Masukkan Password">
+                            </div>
+                        </div>
+                        <div class="mb-2 kelas-tombol">
+                            <label class="mt-5" for="">Tidak punya akun? <a href="#" class="a">Daftar
+                                </a></label>
+                        </div>
+                    </form>
+                    <div class="kelas-tombol pb-3">
+                        <button type="button" class="tombol-login">Login</button> <button type="button"
+                            class="tombol-close" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+            </script>
+</body>
+
+</html>

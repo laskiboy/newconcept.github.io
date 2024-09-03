@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #50623A;
+    color: #fff;
+    font-family: 'Poppins';
+}
+
+header {
+    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px 10%;
+}
+
+.name-logo {
+    color: #ADBC9F;
+    cursor: default;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.sidebar li {
+    padding: 0 20px;
+    display: inline-block;
+}
+
+.sidebar li .link {
+    color: #BFD8AF;
+    position: relative;
+    text-decoration: none;
+}
+
+.sidebar li .link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #BFD8AF;
+    transition: width 0.3s ease;
+}
+
+.sidebar li .link:hover::before {
+    width: 100%;
+}
+
+.tombol {
+    padding: 8px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #387F39;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-family: "Poppins";
+}
+
+.tombol:hover {
+    box-shadow: 0 0 20px 5px rgba(56, 127, 57, 1);
+}
+
+.tombol2 {
+    padding: 8px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #387F39;
+    transition: all 0.3s ease;
+    font-family: "Poppins";
+}
+
+.link2:hover {
+    margin-left: 10px;
+}
+
+.ham {
+    display: none;
+}
+
+.x {
+    display: none;
+}
+
+.container {
+    margin-top: -5px;
+    min-height: 100vh;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-con {
+    width: 100%;
+    margin-top: -93px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.img {
+    background-image: url('/img/ngobrol.jpg');
+    filter: brightness(25%);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.h1-first {
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    background: transparent;
+    font-size: 3em;
+    margin-right: 320px;
+    font-family: 'Poppins';
+}
+
+.typing {
+    position: absolute;
+    height: 60px;
+    padding: 0 15px;
+    background: transparent;
+    overflow: hidden;
+    margin-left: 400px;
+}
+
+.h1-sec {
+    color: #387F39;
+    font-size: 3em;
+    text-align: left;
+    line-height: 60px;
+    font-weight: bolder;
+}
+
+.h1-sec:first-child {
+    animation: moveUp 12s infinite;
+}
+
+@keyframes moveUp {
+    0% {
+        margin-top: 0;
+    }
+
+    16% {
+        margin-top: -60px;
+    }
+
+    33% {
+        margin-top: -120px;
+    }
+
+    50% {
+        margin-top: -180px;
+    }
+
+    66% {
+        margin-top: -120px;
+    }
+
+    84% {
+        margin-top: -60px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+.a {
+    color: #387F39;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.tombol-login {
+    background-color: #387F39;
+
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem);
+}
+
+.modal-content {
+    margin: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    height: 50px;
+    border: none;
+    width: 440px;
+    border-bottom: 1px solid #000;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.tombol-close {
+    padding: 8px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid #387F39;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #387F39;
+    transition: all 0.3s ease;
+    font-family: "Poppins";
+}
+
+.tombol-login {
+    padding: 8px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #387F39;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-family: "Poppins";
+    margin-right: 5px;
+}
+
+.kelas-tombol {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.second-con {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-left: -20px;
+    flex-wrap: wrap;
+}
+
+.kartu {
+    display: flex;
+    flex-direction: column;
+    background-color: #387F39;
+    color: #FFF;
+    width: 370px;
+    height: 550px;
+    margin: 20px;
+    border-radius: 12px;
+}
+
+.img-nc {
+    border-radius: 10px 10px 0 0;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    margin-top: 0;
+}
+
+.h-nc {
+    padding: 20px;
+    font-size: 27px;
+    margin-top: 15px;
+}
+
+.p-nc {
+    padding: 20px;
+    text-align: left;
+}
+
+@media screen and (max-width: 476px) {
+    .x {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 200px;
+        z-index: 9999;
+        background-color: #FFF;
+        display: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    li {
+        margin: 10px -20px;
+        width: 100%;
+    }
+
+    .sidebar li .link {
+        color: #000;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .sidebar li .link::before {
+        display: none;
+    }
+
+    .sidebar li .link:hover::before {
+        width: 100%;
+    }
+
+    .ham {
+        margin-top: -15px;
+        display: flex;
+    }
+
+    .tombol {
+        margin-left: -5px;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 15px;
+        width: 150px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .first-con {
+        margin: 0 auto;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .img {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+    }
+
+    .h1-first {
+        font-size: 2em;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -250px;
+    }
+
+    .typing {
+        font-size: 0.8em;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: -110px;
+    }
+
+    .h1-sec {
+        text-align: center;
+    }
+
+    .second-con {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .kartu {
+        display: flex;
+        justify-content: center;
+        margin: 10 auto;
+        align-items: center;
+        width: 90%;
+    }
+
+    .img-nc {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    input {
+        width: 80%;
+    }
+}
